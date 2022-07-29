@@ -1,8 +1,37 @@
-<section class="flex gap-2 flex-wrap">
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
+<section class="p-8 pt-0 flex items-stretch mb-5">
+  <div class="flex justify-center items-center grow w-full">
+    <h1>Secret Library</h1>
+  </div>
+  <div class="grow w-full">
+    <img src="https://picsum.photos/400/200" class="h-full w-full" alt="" />
+  </div>
+</section>
+<section class="flex flex-col justify-center items-center gap-5 px-4 mb-5">
+  <h3 class="text-center text-xl">Find your book</h3>
+
+  <label
+    for="search"
+    class="relative rounded-full drop-shadow-lg overflow-hidden"
+  >
+    <input
+      type="text"
+      name="search"
+      placeholder="Write here"
+      class="px-5 py-2"
+    />
+    <fa-icon
+      [icon]="faSearch"
+      class="cursor-pointer absolute right-4 icon-search"
+      (click)="search()"
+    ></fa-icon>
+  </label>
+
+  <div class="grid grid-cols-3 gap-4">
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+  </div>
 </section>
