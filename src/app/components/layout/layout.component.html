@@ -1,0 +1,43 @@
+<div class="min-h-screen flex flex-col">
+  <header
+    class="flex justify-between px-3 py-2 items-center sticky top-0 bg-white"
+  >
+    <a routerLink="/">
+      <img src="https://picsum.photos/30/30" alt="" />
+    </a>
+
+    <nav></nav>
+
+    <a routerLink="/login" class="rounded bg-cyan-800 px-2 py-1 text-white"
+      >Login</a
+    >
+  </header>
+  <main class="grow flex">
+    <ng-content></ng-content>
+  </main>
+  <footer class="flex flex-col bg-cyan-900 text-white text-center">
+    <div class="flex gap-3 p-3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad
+        ullam corporis eius quae voluptatibus, enim tenetur voluptas
+        necessitatibus neque nihil ducimus officiis unde recusandae magni,
+        maxime veniam non placeat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad
+        ullam corporis eius quae voluptatibus, enim tenetur voluptas
+        necessitatibus neque nihil ducimus officiis unde recusandae magni,
+        maxime veniam non placeat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad
+        ullam corporis eius quae voluptatibus, enim tenetur voluptas
+        necessitatibus neque nihil ducimus officiis unde recusandae magni,
+        maxime veniam non placeat.
+      </p>
+    </div>
+    <span class="px-2 py-1 bg-slate-800">
+      Made with coffee on Los Olivos (Lima, Perú), by DarwinVA
+    </span>
+  </footer>
+</div>
